@@ -1,0 +1,39 @@
+/*
+ * Arquivo: css/pages/_login.css
+ * Descrição: Estilos da Página de Login
+ */
+.login-page {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; 
+  box-sizing: border-box; 
+}
+
+.login-page main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título na página de login com a cor escura */
+.login-container h2 {
+    color: var(--cor-escura);
+}
+
+#cred-section {
+  display: none;
+}
+
+/* Responsividade do Login */
+@media (max-width: 480px) {
+    .login-container h2 {
+        font-size: 1.6rem;
+    }
+}

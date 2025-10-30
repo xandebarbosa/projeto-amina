@@ -1,0 +1,29 @@
+/*
+ * Arquivo: css/_global.css
+ * Descrição: Estilos Globais e Resets
+ */
+body {
+  font-family: var(--fonte-principal);
+  /* Aplica a cor de fundo clara */
+  background-color: var(--cor-secundaria); 
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  /* Aplica a cor escura para garantir alto contraste no texto padrão */
+  color: var(--cor-escura); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Mantém o gradiente, ajustando as cores se necessário, mas mantendo a animação */
+  background: linear-gradient(270deg, #f8d7e3, #ffe4f0, #f9c9d7, #f2e9ec);
+  background-size: 800% 800%;
+  animation: gradientBG 12s ease infinite;
+  font-size: var(--tamanho-base-fonte); 
+}
+
+/* ===== Animação Fundo ===== */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,13 @@
+/*
+ * Arquivo: css/components/_footer.css
+ * Descrição: Estilos do Rodapé
+ */
+.site-footer { 
+  /* Fundo com a cor primária de destaque */
+  background-color: var(--cor-primaria);
+  /* Texto com a cor clara */
+  color: var(--cor-clara); 
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; 
+}

@@ -1,0 +1,78 @@
+/*
+ * Arquivo: css/components/_form.css
+ * Descrição: Estilos de Formulários e Botões
+ */
+.form { display: flex; flex-direction: column; gap: 15px; }
+.form-group { text-align: left; }
+.form-group label { 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
+    /* Label com a cor escura para alto contraste */
+    color: var(--cor-escura); 
+}
+.form-group input, .form-group textarea, .form-group select {
+  padding: 12px;
+  /* Borda sutil */
+  border: 1px solid var(--cor-borda); 
+  /* Fundo branco puro para digitação clara */
+  background-color: var(--cor-clara); 
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  padding: 12px;
+  /* Fundo com a cor primária */
+  background-color: var(--cor-primaria);
+  /* Texto com a cor clara para alto contraste */
+  color: var(--cor-clara);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  /* Estilização para funcionar como link/botão */
+  text-decoration: none; 
+  display: inline-block; 
+  text-align: center;
+}
+
+.btn-submit:hover { 
+  /* Hover com a cor hover */
+  background-color: var(--cor-hover); 
+}
+
+/* Estilos para Botões de Submissão e Links Estilizados */
+.btn-submit,
+.main-nav a.btn-submit-link { /* Nova regra para links na navegação */
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* PROPRIEDADES ESSENCIAIS PARA LINKS <a>: */
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center;
+}
+
+.btn-submit:hover,
+.main-nav a.btn-submit-link:hover {
+    background-color: var(--cor-hover); 
+}
+
+/* Regra para garantir que os links button-like no nav se ajustem */
+@media (max-width: 768px) {
+    .main-nav a.btn-submit-link {
+        margin: 5px 0; /* Adiciona espaçamento vertical para melhor toque */
+        width: 80%; /* Ocupa mais espaço para facilitar o clique */
+    }
+}
+
+/* ... código restante do _form.css ... */

@@ -1,0 +1,18 @@
+/*
+ * Arquivo: css/_variables.css
+ * Descrição: Variáveis de Cores e Temas (Alto Contraste)
+ */
+:root {
+  /* Cores baseadas na sua paleta para contraste e profissionalismo */
+  --cor-primaria: #7E2A53; /* Um tom de vinho/roxo mais vibrante para elementos principais (Header, botões) */
+  --cor-secundaria: #ECDDED; /* Um rosa bem claro, quase branco, para fundos claros */
+  --cor-escura: #46103A; /* O roxo mais escuro para textos e elementos importantes (alto contraste) */
+  --cor-clara: #FFFFFF; /* Branco puro para textos em fundos escuros */
+  --cor-hover: #8A71A2; /* Um tom de lavanda/malva para interações e destaques */
+  --cor-neutra-clara: #F8F8F8; /* Uma cor neutra para fundos de cards e seções (melhor que branco puro) */
+  --cor-borda: #D0B8D0; /* Uma cor para bordas sutis */
+
+  /* Variáveis de Tipografia */
+  --tamanho-base-fonte: 1rem;
+  --fonte-principal: 'Poppins', sans-serif; 
+}

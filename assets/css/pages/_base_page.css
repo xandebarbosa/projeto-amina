@@ -1,0 +1,25 @@
+/*
+ * Arquivo: css/pages/_base_page.css
+ * Descrição: Estilos de Conteúdo Principal e Responsividade Geral
+ */
+main {
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+  /* Fundo ligeiramente transparente ou neutro para o container principal */
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Responsividade Geral ===== */
+@media (max-width: 480px) {
+    .content-section {
+        padding: 1.5rem 1rem;
+    }
+}

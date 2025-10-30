@@ -1,0 +1,23 @@
+/*
+ * Arquivo: css/main.css
+ * Descrição: Arquivo principal de importação (substitui o antigo style.css no HTML)
+ */
+
+ /* 1. Variáveis */
+@import url('_variables.css'); 
+
+/* 2. Estilos Globais */
+@import url('_global.css');
+
+/* 3. Componentes */
+@import url('components/_header.css');
+@import url('components/_footer.css');
+@import url('components/_card.css');
+@import url('components/_form.css');
+@import url('components/_chat.css');
+
+/* 4. Estilos de Páginas Específicas */
+@import url('pages/_base_page.css');
+@import url('pages/_login.css');
+@import url('pages/_mapa.css');
+

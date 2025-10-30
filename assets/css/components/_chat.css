@@ -1,0 +1,98 @@
+/*
+ * Arquivo: css/components/_chat.css
+ * Descrição: Estilos do Componente Chat
+ */
+#chat-container {
+  border: 1px solid var(--cor-borda); /* Borda sutil */
+  border-radius: 8px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+#chat {
+  height: 400px;
+  padding: 20px;
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--cor-neutra-clara); /* Fundo neutro */
+}
+
+.msg-container { display: flex; max-width: 80%; }
+.msg { padding: 10px 15px; border-radius: 18px; line-height: 1.4; }
+
+/* Estilo para as mensagens da Amina (esquerda) */
+.msg-container.amina { align-self: flex-start; }
+.msg-container.amina .msg {
+  background-color: var(--cor-secundaria); /* Fundo secundário claro */
+  color: var(--cor-escura); /* Texto escuro (alto contraste) */
+  border-bottom-left-radius: 4px;
+}
+
+/* Estilo para as mensagens do Usuário (direita) */
+.msg-container.user { align-self: flex-end; }
+.msg-container.user .msg {
+  background-color: var(--cor-primaria); /* Fundo primário */
+  color: var(--cor-clara); /* Texto claro (alto contraste) */
+  border-bottom-right-radius: 4px;
+}
+
+#input-container {
+  display: flex;
+  border-top: 1px solid var(--cor-borda); 
+}
+
+#input-container input {
+  flex-grow: 1; 
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: var(--cor-clara); /* Fundo branco */
+  color: var(--cor-escura);
+}
+
+#input-container input:focus { outline: none; }
+
+#input-container button {
+  border: none;
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#input-container button:hover {
+  background-color: var(--cor-hover);
+}
+
+
+/* Animação "digitando..." */
+.typing {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-secundaria);
+  padding: 12px 15px;
+  border-radius: 18px;
+  border-bottom-left-radius: 4px;
+}
+
+.typing .dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: var(--cor-escura); /* Pontos escuros */
+  border-radius: 50%;
+  animation: bounce 1.3s infinite;
+}
+
+.typing .dot:nth-child(2) { animation-delay: 0.2s; }
+.typing .dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}

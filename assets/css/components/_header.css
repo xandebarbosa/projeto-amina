@@ -1,0 +1,80 @@
+/*
+ * Arquivo: css/components/_header.css
+ * Descrição: Estilos do Cabeçalho e Navegação
+ */
+.site-header {
+  /* Fundo com a cor primária de destaque */
+  background-color: var(--cor-primaria);
+  /* Texto com a cor clara para alto contraste */
+  color: var(--cor-clara); 
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-header h1 { margin: 10px 0 5px; font-size: 2.2rem; font-weight: 600; }
+/* Slogan usa a cor secundária (clara) para contraste suave com o header escuro */
+.site-header .slogan { font-style: italic; font-size: 1.1rem; color: var(--cor-secundaria); } 
+
+/* ===== Logo ===== */
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  /* Borda com a cor clara */
+  border: 3px solid var(--cor-clara); 
+  box-shadow: 0 4px 12px rgba(0,0,0, 0.2);
+  transition: transform 0.3s ease;
+}
+.logo:hover { 
+  transform: scale(1.05);
+  /* Shadow ajustada para a cor primária */
+  box-shadow: 0 6px 18px rgba(126, 42, 83, 0.5); 
+}
+
+/* ===== Navegação e Menu Hambúrguer ===== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--cor-clara);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  /* Cor do link (claro) */
+  color: var(--cor-clara); 
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  /* Fundo branco no hover */
+  background: var(--cor-clara); 
+  /* Texto com a cor primária no hover para contraste */
+  color: var(--cor-primaria); 
+}
+
+/* Responsividade de Nav */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .main-nav { display: none; flex-direction: column; width: 100%; text-align: center; }
+  .main-nav.is-open { display: flex; }
+}

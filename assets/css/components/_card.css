@@ -1,0 +1,41 @@
+/*
+ * Arquivo: css/components/_card.css
+ * Descrição: Estilos dos Cards
+ */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.card-link { 
+    text-decoration: none; 
+    display: block; 
+    height: 100%;
+}
+
+.card {
+  /* Fundo com a cor neutra clara (mais profissional que branco puro) */
+  background: var(--cor-neutra-clara); 
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 200px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+/* Título do card com a cor primária para destaque */
+.card h3 { 
+    font-size: 1.3rem; 
+    color: var(--cor-primaria); 
+    margin-top: 0; 
+}
+
+.card:hover { 
+    transform: translateY(-6px); 
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15); 
+}
