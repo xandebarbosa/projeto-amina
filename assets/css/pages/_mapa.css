@@ -14,11 +14,13 @@
 }
 
 #map {
-    height: 100%; 
     width: 100%;
     flex-grow: 1;
     transition: margin-left 0.3s ease;
-    min-height: 500px; 
+    min-height: 500px;
+    
+    margin-left: 340px; 
+    box-sizing: border-box; /* Garante que o mapa não ultrapasse a tela */
 }
 
 /* SIDEBAR (MENU LATERAL) */
@@ -124,7 +126,7 @@
 /* CABEÇALHO DO SIDEBAR */
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     margin-bottom: 20px;
 }
