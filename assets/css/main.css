@@ -15,6 +15,7 @@
 @import url('components/_card.css');
 @import url('components/_form.css');
 @import url('components/_chat.css');
+@import url('components/_themes.css');
 
 /* 4. Estilos de Páginas Específicas */
 @import url('pages/_base_page.css');
